@@ -2,75 +2,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=t, initial-scale=1.0">
-    <title>Document</title>
+    <title>اطلاعات کامل </title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        /* این قسمت برای تنظمات نام استفاده میشود  */
+        .name{
+            width: 30%;
+                        height: 60%;
+         /* این قسمت برای تنظیمات فامیل است                */
         }
- th{
+        .last{
+            width: 40%;
+            height: 60%;
+        }
+        /* این قسمت برای شمارهی تلفن */
+        .tel{
+            width: 50%;
+            height: 40%;
+            font-size: large;
+            font: optional; background-color: rgb(255, 255, 255);
+        }
+        /* این قسمت برای بخش توجه کنید شماره ی تلفن است */
+        .p{
+            color: rgb(180, 12, 12);
+            font-size: x-large;
+            margin-right: 52%;
+            margin-top: -3%;
+        }
+        /* این قسمت برای استایل تاریخ تولد است */
+        .date{
+            width: 40%;
+            height: 60%;
+            font-size:large;
+            font-style: oblique;
+        }
+        /* این قسمت برای کشور ها است */
+        .c{
+            width: 40%;
+            height: 60%;
+            font-size: x-large;
+        }
+        .ir{
+            color: rgb(90, 90, 90);
+        }
+        .s{
+            color: black;
+        }     
+
+
+        /* این قسمت برای استایل تکست اریا است */
+        
+        .t{
+            background-color: rgb(245, 245, 245);
+            width: 100%;
+            height: 89%;
+        }
+        /* این قسمت برای استایل دکمه ی submit است */
+         .amir{
+            background-color: rgb(12, 202, 38);
+            width: 100px;
+            height: 50px;
+          margin-right: 40%;
+         
+        }
+        /* این قسمت هم برای دکمه ی ریست */
+         .r{
+            background-color: rgb(214, 11, 11);
+            margin-right: 60%;
+            width: 100px;
+            height: 50px;
+            margin-top:-3.9%
+        }
+        /* این قسمت برای تنظیمات کل تیبل است */
+        table{
+             margin: 20px auto; width: 70%; height: 100%;
+            background-color: bisque;
+        }
+         /* این قسمت برایااستایل تایتل هدر است */
+         th{
     background-color: rgb(109, 109, 109);
- }
- table{ margin: 20px auto; width: 70%; height: 100%;}
+        }
+ 
     </style>
    
 </head>
+<!-- برای راست چین کردن متن ها -->
 <body dir="rtl">
-    <form>
-  
-     <table border="1px">
+
+  <form>
+<!-- برای خط کشی تیبل -->
+<table border="5px">
+<!-- تایتل هدر  -->
 <tr>
- <th colspan="2">فرم کامل اطلاعات</th>
+   <th colspan="2">فرم کامل اطلاعات</th>
 </tr>
+<!-- نام  -->
 <tr>
-<td>نام:</td>
-<td><input type="text"></td>
+    <td>نام:</td>
+    <td><input type="text" class="name"></td>
 </tr>
+<!-- نام خانوادگی  -->
 <tr>
-<td>فامیل:</td>
-<td><input type="text"></td> 
+    <td>نام خانوادگی:</td>
+    <td><input type="text" class="last"></td> 
 </tr>
+<!-- این قسمت برای افزودن شماره ی تلفن است -->
 <tr>
-    <td>شماره ی تماس</td>
-    <td><input type="tel"></td>
+    <td>شماره ی تماس:</td>
+    <td><input type="tel" class="tel" value="0912 000 0000:مثال"><p class="p">توجه مثال را پاک کنید</p></td>
+   
 </tr>
+
 <tr>
     <td> تاریخ تولد:</td>
-    <td><input type="date"></td>
+    <td><input type="date"  class="date"></td>
 </tr>
+<!-- این قسمت برای انتخاب جنسیت است -->
 <tr>
-    <td>علاقه منی ها:</td>
+    <td>علاقه مندی ها:</td>
     <td><input type="checkbox">ورزش
     <input type="checkbox">مطالعه<input type="checkbox">موسیقی</td>
 </tr>
+
 <tr>
     <td>جنسیت:</td>
     <td><input type="radio" name="r1">خانوم
-    <input type="radio" name="r1">آقا</td>
+        <input type="radio" name="r1">آقا
+    </td>
 </tr>
+ <!-- این قسمت برای انتخاب کشور است   -->
 <tr>    
-    <td>کشور:</td>
-    <td><select name="انتخاب کنید" id="">
-    <option value="انتخاب کنید">ایران</option> 
-    <option value="">هلند</option>
-    <option value="">امریکا</option>
-</select>
-</td>
+    <td>قاره:</td>
+    <td> <select name="انتخاب کنید" id="" class="c">
+          <option value="انتخاب کنید" class="s">انتخاب کنید</option>
+            <option value="انتخاب کنید" class="ir">آسیا</option> 
+               <option value="" class="ir">اروپا</option>
+                 <option value="" class="ir">آمریکا</option>
+                  <option value="" class="ir">آفریقا</option>
+                   <option value="" class="ir">استرالیا</option>
+         </select>
+    </td>
 </tr>
+
 <tr>
-    <td>رزومه ی کاری</td>
-    <td><input type="file"></td>
+      <td>رزومه ی کاری:</td>
+      <td><input type="file"></td>
 </tr>
-<tr>
+
+<tr> 
+<!-- این قسمت برای توضیحات بیشتر است -->
     <td>توضیحات</td>
-    <td><textarea name="" id=""></textarea></td>
+    <td><textarea name="بنویسید" id="بنویسید" class="t"></textarea></td>
 </tr>
-<tr1>
-<td colspan="2"><input type="submit" value="ارسال">
-<input type="reset" value="پاک کردن"></td>
-</tr1>
 
+<tr>
+     <!-- این قسمت برای دکمه های submit و reset است -->
+     <td colspan="2">
+          <input type="submit" value="ارسال" class="amir"> 
+          <input type="reset" value="پاک کردن" class="r">
+     </td>
+          
+</tr>
 
-    </table>
+</table>
+
  </form>
+ 
 </body>
 </html>
