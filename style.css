@@ -1,0 +1,17 @@
+@font-face {
+            font-family: Amirfont;
+                                  src: url("font/AIranianSans.ttf") format("ttf");
+
+                                       src: url("font/11zon_AIranianSans.woff") format("woff");
+
+                                          src: url("font/11zon_AIranianSans.woff2") format("woff2");
+
+                                             src: url("font/11zon_AIranianSans.otf") format("otf");
+
+                                                src: url("font/11zon_AIranianSans.eot") format("eot")
+                                                                                                      }
+    body{
+        font-family: Amirfont;               
+                               }
+
+   
